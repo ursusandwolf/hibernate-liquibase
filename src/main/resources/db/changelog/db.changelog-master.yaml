@@ -32,7 +32,7 @@ databaseChangeLog:
                   autoIncrement: true
                   constraints:
                     primaryKey: true
-                    nullable: false
+                    nullable: true
 
               - column:
                   name: name
@@ -44,7 +44,7 @@ databaseChangeLog:
                   name: country_id
                   type: bigint
                   constraints:
-                    nullable: false
+                    nullable: true
 
         - addForeignKeyConstraint:
             baseTableName: actors
